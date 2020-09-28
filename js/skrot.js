@@ -9,9 +9,6 @@ function abbreviation() {
         case 'FIFA':
         result = 'Federation Internationale de Football Association';
         break;
-        case 'SBJP':
-        result = 'Stare Baby Jebać Prądem ';
-        break;
         case 'PESEL':
         result = 'Powszechny Elektreoniczny System Ewidencji Ludności';
         break;
