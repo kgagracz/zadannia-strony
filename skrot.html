@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skróty i przysłowia</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1><a href="index.html">Strona główna</a></h1>
     <section id="main">
         <label for="number1">Wprowadź skrót, aby dowiedzieć się co oznacza </label>
         <input type="text" id="skrot" class="number-input" onkeyup="this.value = this.value.toUpperCase();">
-        <button id="check">Sprawdź!</button>
-        <p id="info"></p>
+        <button class="button" id="check">Sprawdź!</button>
+        <p class="result" id="info"></p>
 
-        <label for="number1">Wprowadź słowo kluczowe danego przysłowia. Aktualnie w bazie znajduje się <span id="index"></span> przysłów. </label>
+        <label for="number1">Wprowadź słowo kluczowe danego przysłowia. </label>
         <input type="text" id="keyword" class="number-input">
-        <button id="check2">Sprawdź!</button>
-        <p id="info2"></p>
+        <button class="button" id="check2">Sprawdź!</button>
+        <p class="result" id="info2"></p>
     </section>
     <script src="js/skrot.js"></script>
 </body>

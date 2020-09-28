@@ -39,6 +39,7 @@ document.getElementById('check').addEventListener('click', abbreviation);
 function przyslowia() {
     let keyword = document.getElementById('keyword').value;
     let result = document.getElementById('info2');
+    let sentencesFound = 0;
     let przyslowia = [
      'Kto pod kim dołki kopie, ten sam w nie wpada',
      'Co kraj, to obyczaj', 
@@ -63,13 +64,18 @@ function przyslowia() {
      'Lepsza byle jaka prawda, niż dobre kłamstwo.',
      'Licho nie śpi.',
      'Szukać igły w stogu siana.',
-    ]
-
-    przyslowia.forEach(function(element){
-        if (element.includes(keyword)) {
-            result.innerHTML = element
-        } else result.innerHTML = 'Nie ma takiego przysłowia w bazie';
-    })
+    ];
+    
+    przyslowia.forEach((element) => {
+        if (element.toLowerCase().search(keyword.toLowerCase()) !== -1) {
+          result.innerHTML += element + "</br>";
+          sentencesFound++;
+        }
+      });
+      if (sentencesFound === 0) {
+        result.innerHTML = "Nie znaleziono przysłowia";
+      }
+    
 
 }
 
