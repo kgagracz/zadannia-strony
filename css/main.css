@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .main-container {
@@ -54,3 +55,11 @@ a{
     text-decoration: none;
 }
 
+#info {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    font-size: 35px;
+}
